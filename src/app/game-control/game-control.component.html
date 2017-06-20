@@ -1,0 +1,10 @@
+<button class="btn"
+        [ngClass]="{'btn-success': buttonStart, 'btn-primary': !buttonStart }"
+        (click)="gameOn()">
+  {{ buttonGameOn }}
+</button>
+<button class="btn btn-danger"
+        [disabled]="!buttonStart"
+        (click)="stopGame()">
+  Stop Game
+</button>
